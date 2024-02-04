@@ -1,0 +1,105 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(135deg, #6a11cb 10%, #2575fc 100%); /* Gradient background */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Subtle box shadow */
+    padding: 30px;
+    border-radius: 15px;
+    border: 2px solid #ddd; /* Border for a refined look */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transition effects */
+    width: 400px;
+    text-align: center;
+    color: #333;
+    animation: fadeInUp 0.8s ease; /* Fade-in animation */
+}
+
+.container:hover {
+    transform: scale(1.02); /* Scale up on hover for a subtle effect */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Slightly elevate box shadow on hover */
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    color: #0066cc;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+label {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+input {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+button {
+    background-color: #0066cc;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+.upi-logos {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.upi-logos button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    transition: transform 0.3s; 
+}
+
+.upi-logos button:hover {
+    transform: scale(1.1); 
+}
+
+.upi-logos img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid rgba(0, 102, 204, 0.8);
+}
+
+
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
